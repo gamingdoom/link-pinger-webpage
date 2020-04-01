@@ -6,7 +6,7 @@
     </head>
         <style>
             body {
-            background-color: #d8d7d7;
+            background-color: #4988fc;
         }
         h2 {
             text-align: center;
@@ -25,15 +25,95 @@
                 <h2 style = text-align:center;>Welcome To The Link Pinger Page </h2>
             </div>
                 <br><br>
-                <h3 style = text-align:center;>Input Link Here:</h3>
                 <form style="text-align: center;">
-                    <label style="text-align: center;" for = "linkin">Link:</label>
-                    <input type="text" id="linkin" name="linkin">
-                    <input type="submit" value="Submit">
+                 
                 </form>
-               
-                
-        </body>
+                <form style="text-align: center;">
+                <label for="msg">Domain Name:</label>
+                <input type='text' class='form-control' style='width:99%;height:50px' name='msg' id='msg' value='' placeholder="Type domain name e.g. google.com and click Ping">
+                <select class="form-control" id="server" name="server" style="width:100%">
+                <option value="" >Use Random API Server (&amp;server=0)</option>
+                <option value="helloacm.com"selected>Use East USA API Server (&amp;server=1)</option>
+                <option value="uploadbeta.com">Use London UK 1, API Server (&amp;server=2)</option>
+                <option value="happyukgo.com">Use Tokyo, Japan API Server (&amp;server=3)</option>
+                <option value="steakovercooked.com">Use New York 1, USA API Server (currently down) (&amp;server=4)</option>
+                <option value="anothervps.com">Use Frankfurt, Germany API Server (&amp;server=5)</option>
+                <option value="isvbscriptdead.com">Use Vancouver, Canada API Server (&amp;server=6)</option>
+                <option value="zhihua-lai.com">Use London, UK 2 API Server (&amp;server=7)</option>
+                <option value="weibomiaopai.com">Use New York 2, USA API Server (&amp;server=8)</option>
+                <option value="steemyy.com">Use New York 3, USA API Server (&amp;server=9)</option>
+                </select><input id=pingbtn type='button' style='min-width:1080px;max-width:100%;color:yellow;background:green' class='form-control' onclick="if (!window.__cfRLUnblockHandlers) return false; change($(&quot;#msg&quot;).val())" value='Ping' data-cf-modified-0b4f9a53e6b6809533b78c0c-="" />
+                <span id='status'> </span>
+                <script async src="pagead/js/adsbygoogle.js" type="0b4f9a53e6b6809533b78c0c-text/javascript"></script>
+                <script type="0b4f9a53e6b6809533b78c0c-text/javascript">
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <textarea class='form-control' style='width:100%;height:250px' name='ascii' id='ascii'> </textarea>
+                </legend></fieldset>
+                </pre>
+                <script async src="pagead/js/adsbygoogle.js" type="0b4f9a53e6b6809533b78c0c-text/javascript"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-5311181282559050" data-ad-slot="3357502457"></ins>
+                <script type="0b4f9a53e6b6809533b78c0c-text/javascript">
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <script async src="pagead/js/adsbygoogle.js" type="0b4f9a53e6b6809533b78c0c-text/javascript"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5311181282559050" data-ad-slot="4109756279" data-ad-format="link" data-full-width-responsive="true"></ins>
+                <script type="0b4f9a53e6b6809533b78c0c-text/javascript">
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <div id="sharedropdown"> </div><div id="sharedropdown_qr"> </div><script src="js/addthis.js" async type="0b4f9a53e6b6809533b78c0c-text/javascript"></script>
+                <script type="0b4f9a53e6b6809533b78c0c-text/javascript" src="js/300/addthis_widget.js" async></script></div></center><script src='js/jquery.js' type="0b4f9a53e6b6809533b78c0c-text/javascript"></script><script src="bs/js/bootstrap.min.js" type="0b4f9a53e6b6809533b78c0c-text/javascript"></script><script type="0b4f9a53e6b6809533b78c0c-text/javascript">
+                var loading = false;
+                function change(txt) {
+                  if (loading) {
+                    $('#status').html("Ping is ongoing ... ");
+                    return false;
+                  }
+                   if ((txt.length <= 3) || txt.includes(',')||txt.includes(' ')||txt.includes('"')||txt.includes("'")) {
+                   $('#status').html("<font color=red><B>Please enter a valid domain name.</B></font>");
+                    return;
+                   }
+                var server = $('#server').val();         
+                if (!server) {
+                  var serverlist = ['helloacm.com', 'happyukgo.com', 'uploadbeta.com', 'steakovercooked.com', 'anothervps.com', 'isvbscriptdead.com', 'weibomiaopai.com', 'zhihua-lai.com', 'steemyy.com'];
+                  server = serverlist[Math.floor(Math.random() * serverlist.length)];          
+                }              
+                            $("#status").html("Pinging " + txt + " from API Server: <B>" + server + "</B> ...<BR/><img width=100 src='/images/loading.gif'/>");
+                  $('textarea#ascii').html("Ping " + txt + " via " + server + " ...");
+                  loading = true;
+                  $.ajax(
+                    {
+                        dataType: "json",
+                        url: "https://" + server + "/api/ping/?host="+txt,
+                        cache: false,
+                        success: function (response) {
+                          $('textarea#ascii').html(response);
+                        } ,
+                        error: function(request, status, error) {
+                          $('textarea#ascii').html('API is currently not available: ' + server + " " + request.responseText + '');
+                        },
+                        complete: function(data) {
+                          $('textarea#ascii').focus();
+                          $('#status').html('');
+                          loading = false;
+                        }        
+                    });
+                }
+                $(document).ready(function() {
+                  var url=$("#msg").val();
+                  if (url) change(url);
+                  $("#msg").keypress(function(e) {
+                      if (e.which == 13) {
+                         $("input#pingbtn").trigger("click");              
+                      }              
+                  });  
+                  $("a[href='#top']").click(function() { $("html, body").stop().animate({ scrollTop: 0 }, "slow"); return false; });
+                });
+                </script><script src="cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="0b4f9a53e6b6809533b78c0c-|49" defer=""></script>
+            </form>
+            
+            </body>
+
 
 
 

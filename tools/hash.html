@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head><meta charset="UTF-8" /><script src="../cdn-cgi/apps/head/qbmfjji_vubu_twprvwygszvdm8.js"></script><link rel="dns-prefetch" href="//ajax.cloudflare.com"><link rel="dns-prefetch" href="//cdnjs.cloudflare.com"><link rel="dns-prefetch" href="//cloudflare.com"><link rel="dns-prefetch" href="//ajax.googleapis.com"><link rel="dns-prefetch" href="//googleapis.com"><link rel="dns-prefetch" href="//google-analytics.com"><link rel="dns-prefetch" href="//pagead2.googlesyndication.com"><link rel="dns-prefetch" href="//googlesyndication.com"><title>Online String Hash Algorithms | Online String Hash Calculator with API</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name=applicable-device content="pc,mobile">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"><link rel="icon" href="../favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"><link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff"><meta name='description' content='Online String Hash Algorithms and Online String Hash Calculator with API'>
+<meta name='keywords' content='Online String Hash Algorithms, Online String Hash Calculator with API, MD5 Hash, SHA256 HASH, RIPEMD256 HASH, TIGER HASH, CRC HASH, SHA512 HASH'>
+<link rel="canonical" href="../tools/hash.html">
+<link rel="alternate" hreflang="zh-CN" href="../index.html">
+<meta property="og:url" content="https://helloacm.com/tools/hash/">
+<meta property="og:image" content="https://helloacm.com/md5/md5.jpg">
+<link href="../bs/css/bootstrap.min.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="../html5shiv/3-7-2/html5shiv.min.js"></script>
+<script src="../respond/1-4-2/respond.min.js"></script>
+<![endif]-->
+<style>
+.mainbody{width:80%;text-align:left;margin:10px;}
+th,td{word-wrap:break-word;overflow-wrap:break-word;}
+</style> <script async src="../pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5311181282559050",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body><div style="position:fixed;bottom:50px;right:5px"><a title="To the Top" href="#top"><img width=40 alt="To the Top" title="To the Top" src="data:image/png;base64,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" /></a></div><a name="top"></a><center>
+<div class='mainbody'>
+<h1>Online Hash Calculator for Strings using Different Algorithms</h1>
+<style>
+.dropdown{float:left;}
+.toolstopmenu{display:inline-block;}
+</style>
+<div class="toolstopmenu">
+<div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Files
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../compute-file-hash.html' title='Compute File Hash (FileReader)'>Compute File Hash</a></li>
+<li><a href='https://rot47.net/base64encoder.html' title='Base64 Encoder/Decoder for Text/Binary Files'>Base64 Binary Files</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Images
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../tools/sketch.html' title='Photo Drawing/Sketch Style Tool'>Photo Drawing/Sketch Style</a></li>
+<li><a href='../tools/image-to-ascii.html' title='Image to ASCII Converter | Convert Photos to ASCII Online Tool'>Image to ASCII Converter</a></li>
+<li><a href='../tools/qrcode-reader.html' title='QR Image Reader'>QR Image Reader</a></li>
+<li><a href='../images-compressor.html' title='Images Compressor APIs'>Images Compressor APIs</a></li>
+<li><a href='https://uploadbeta.com/picture-gallery/faq.php#api' title='APIs from Image Sharer'>APIs from Image Sharer</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Encrytion
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../md5.html' title='Ajax MD5 Hash Calculator'>Ajax MD5 Hash Calculator</a></li>
+<li><a href='../tools/hash.html' title='Online Hash Calculator for Strings using Different Algorithms'>Online Hash Calculator for Strings using Different Algorithms</a></li>
+<li><a href='../decode-hardware-id.html' title='VMProtect Hardware ID Decoder'>VMProtect Hardware ID Decoder</a></li>
+<li><a href="https://rot47.net/">ROT47 Character Substitution Cipher</a></li>
+<li><a href="https://rot47.net/rot13.html">ROT13 Letter/ROT5 Digit Substitution Cipher</a></li>
+<li><a href="https://rot47.net/crc32.html">CRC32 Calculator</a></li>
+<li><a href="https://rot47.net/base.html">Arbitrary Base Number Converter</a></li>
+<li><a href="https://rot47.net/pibas.interpreter.html">PIBAS Interpreter</a></li>
+<li><a href="https://rot47.net/_url/">Make URL Shorter</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Developer
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../tools/what-is-my-screen-resolution.html'>What is my screen resolution?</a></li>
+<li><a href='https://isvbscriptdead.com/vbs-obfuscator/' title='Online VBScript Obfuscator (Encrypt/Protect VBS)'>Online VBScript Obfuscator</a></li>
+<li><a href='../index.html' title='Unlimited GUID Generator with API'>Unlimited GUID Generator with API</a></li>
+<li><a href='../index.html' title='HTML5 RGB Color Pickers/Table'>HTML5 RGB Color Pickers/Table</a></li>
+<li><a href='../index.html' title='Random String/Password Generator'>Random String/Password Generator</a></li>
+<li><a href='../index.html' title='Unicode String to ASCII converter'>Ajax Unicode String to ASCII</a></li>
+<li><a href='../index.html' title='List of APIs'>List of All APIs</a></li>
+<li><a href='../index.html' title='Online Crontab Line Generator'>Online Crontab Line Generator</a></li>
+<li><a href='../index.html' title='Markdown Parser with API'>Markdown Parser with API</a></li>
+<li><a href='../index.html' title='Unix Timestamp Converter'>Unix Timestamp Converter</a></li>
+<li><a href='../index.html' title='URL Percent Encoding/Decoding'>URL Percent Encoding/Decoding</a></li>
+<li><a href='../index.html' title='This API /api/get-item allows you to retrieve the item description(image, title, price) from webpages'>Obtain Shop-Item Data</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Chrome Extensions
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/simple-snake-game/fbbeckekbefhhmabpfjgpjobkmnfjbec'>Simple Snake Game</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/coin-tools/fmglcggbdcbkpkfapngjobfeakehpcgj'>CoinTools - Cryptocurrency Lookup</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/steem-tools/emjfpeecopppojbhkigjjmcahbfahhbn'>Steem Tools</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/utopian-moderator-supervi/dcjdbldgiiboblbaconadffdaicicebc'>Utopian Moderator & Supervisor</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/hide-steemit-payout/lbpcheminbfokogdnckkipdmaadldhlh'>Hide SteemIt Payout</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/job-tools/ghclpimmbjepihhlnklkiemncamklkii'>JobTools - Job Seeking</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/logo-turtle/dcoeaobaokbccdcnadncifmconllpihp'>Logo Turtle Programming</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj'>Show My IP Addresses (External and Local)</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/%E7%AE%80%E4%BD%93%E7%B9%81%E4%BD%93%E8%BD%AC%E6%8D%A2-simplifiedtraditio/olpihmabpjpllgmahlgiakkgaccigpfo'>Simplified/Traditional Chinese</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/simple-video-download-hel/ilcdiicigjaccgipndigcenjieedjohj'>Simple Video Download Helper</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/offline-qr-code-generator/kfhbhjigpkcbpmknfomdobahejfajado'>Offline QR Code Generator/Editor</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Game
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' target=_blank title='Simple Snake Game in the Browser'>Simple Snake Game in Javascript</a></li>
+<li><a href='../index.html' title='This page uses JQuery/Ajax to call a API to compute 24 points for 4 poker cards.'>Poker 24 pointer calculator</a></li>
+<li><a href='https://justyy.com/watch-tv-online/en/' title='Watch TV Online | Online Video Streaming | Watch Sports'>Online Video Streaming</a></li>
+<li><a href="https://weibomiaopai.com/download-video-parser.php">Video Download Tool</a></li>
+<li><a href='../index.html' title='Unlimited Maze Games | Find the Exit of Mazes'>Unlimited Maze Games</a></li>
+<li><a href='https://uploadbeta.com/picture-gallery/?key=BingEverydayWallpaperPicture' title='Bing Everyday Wallpaper'>Bing Everyday Wallpaper</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Fun
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' title='Online Fortune-teller Tool'>Fortune-Teller</a></li>
+<li><a href='../index.html' title='Online Calendar Tool'>Calendar</a></li>
+<li><a href='../index.html' title='Online RIG Tool'>Random Identity Generator</a></li>
+<li><a href='../index.html' title='Online Gregorian dates to Discordian Converter'>Gregorian/Discordian Converter</a></li>
+<li><a href='../index.html' title='Cowsay/Cowthink Tool: configurable speaking/thinking cow'>Cowsay/CowThink</a></li>
+<li><a href='../index.html' title='How many days do you need before you have sex with the girl?'>Sex Equation</a></li>
+<li><a href='../index.html' title='Online Figlet Tool'>Figlet</a></li>
+<li><a href='../index.html' title='Online toilet Tool'>Toilet</a></li>
+<li><a href='../index.html' title='Online banner Tool'>Banner</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Daily
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' title='MPG Calculator (Car Fuel Efficiency) with API'>MPG Calculator</a></li>
+<li><a href='../index.html' title='The Simple Mortgage Calculator Implemented in C/C++, Javascript and MySQL'>Mortgage Calculator</a></li>
+<li><a target=_blank href='https://justyy.com/tools/chinese-converter/' title='Chinese Converter (Pinyin, Cantonese and Mandarin)'>Chinese Converter (Pinyin, Cantonese and Mandarin)</a></li>
+<li><a target=_blank href='https://justyy.com/archives/3450' title='Pinyin API'>Pinyin API</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Maths
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' title='Plot Function Graph'>Simple Function Plot</a></li>
+<li><a href='../index.html' title='Pi Digits Lookup with API'>Pi Digits Lookup</a></li>
+<li><a href='../index.html' title='Number Factorization with API'>Number Factorization Tool with API</a></li>
+<li><a href='../index.html' title='Online Converter from Arabic Numerals (Integers) to English Words with API'>Arabic Numerals to English</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Network
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' title='Online HTTP Curl Tool'>Online CURL</a></li>
+<li><a href='../index.html' title='htpasswd File Generator for Apache httpd'>htpasswd File Generator</a></li>
+<li><a href='../index.html' title='URL Status Checker with API support'>URL Status Checke</a></li>
+<li><a href='../index.html' title='Parse User Agent String with API'>Parse User Agent String</a></li>
+<li><a href='../index.html' title='Ping a Host/Domain'>Ping a Host/Domain</a></li>
+<li><a href='../index.html' title='What is my IP address'>Get IP Address</a></li>
+<li><a href='../index.html' title='This page implements a Javascript Ajax calls the API to compute an IPv4 Netmask/broadcast/etc.'>IPv4 Calculator</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">SteemIt
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='https://steemyy.com/' title='SteemIt Tools and APIs'>SteemIt Tools and APIs</a></li>
+<li><a href='https://steemyy.com/witness-ranking/' title='Steemit Witness Ranking Table'>Steemit Witness Ranking Table</a></li>
+<li><a href='https://steemyy.com/trail/' title='Steem Auto Trailer'>Steem Auto Trailer</a></li>
+<li><a href='https://steemyy.com/steem-conversations/' title='Steem Conversations Viewer'>Steem Conversations Viewer</a></li>
+<li><a href='https://steemyy.com/account/' title='Steemit Account Information'>Steemit Account Information</a></li>
+<li><a href='https://steemyy.com/witness-data/justyy' title='Steem Witness Information'>Steem Witness Information</a></li>
+<li><a href='https://steemyy.com/witness/' title='Steemit Witnesses List - Unvote Inactive Witnesses'>Steemit Witnesses List - Unvote Inactive Witnesses</a></li>
+<li><a href='https://steemyy.com/proxy/' title='Steemit Witness Proxy - Check Who Vote You As Witness Proxy?'>Steemit Witness Proxy - Check Who Vote You As Witness Proxy?</a></li>
+<li><a href='https://steemyy.com/steemjs/' title='Steemit SteemJs Editor'>Steemit SteemJs Editor</a></li>
+<li><a href='https://steemyy.com/claim-rewards/' title='SteemIt Auto Claim Rewards'>SteemIt Auto Claim Rewards</a></li>
+<li><a href='https://steemyy.com/claim-tokens/' title='SteemIt Auto Claim Scot Tokens Rewards'>SteemIt Auto Claim Tokens</a></li>
+<li><a href='https://steemyy.com/mutual-witness/' title='Steemit Mutual Witness Report'>Steemit Mutual Witness Report</a></li>
+<li><a href='https://steemyy.com/who-vote-you-as-witness/' title='SteemIt Witness Supporters'>SteemIt Witness Supporters</a></li>
+<li><a href='https://steemyy.com/powerdown/' title='Steemit Powerdown Status'>Steemit Powerdown Status</a></li>
+<li><a href='https://steemyy.com/top-delegations/' title='Steemit Top 100 Delegations'>Steemit Top 100 Delegations</a></li>
+<li><a href='https://steemyy.com/top-delegations-by-count/' title='SteemIt Most Delegated Account by Number of Delegations'>SteemIt Most Delegated Account by Number of Delegations</a></li>
+<li><a href='https://steemyy.com/top-delegations-by-sp/' title='SteemIt Most Delegated Account by Vests'>SteemIt Most Delegated Account by Vests</a></li>
+<li><a href='https://steemyy.com/sp-delegate-form/' title='SteemIt - SteemIt SP Delegation Form'>SteemIt SP Delegation Form</a></li>
+<li><a href='https://steemyy.com/wallet/' title='SteemIt Wallet Tool - Send SBD or STEEM to Multiple Accounts'>SteemIt Wallet Tool</a></li>
+<li><a href='https://steemyy.com/transfer-viewer/' title='SteemIt Wallet Tool - Steem Account Transfer Viewer'>Steem Account Transfer Viewer</a></li>
+<li><a href='https://steemyy.com/who-has-not-voted/' title='SteemIt - Check If Your Followers Have Voted Your Post'>SteemIt Followers/Votes Checker</a></li>
+<li><a href='https://steemyy.com/who-downvote-you/' title='SteemIt - Check Who Downvoted Your Posts/Comments'>SteemIt Downvote Checker</a></li>
+<li><a href='https://steemyy.com/flag/' title='SteemIt Your Downvote History'>SteemIt Your Downvote History</a></li>
+<li><a href='https://steemyy.com/delegators/' title='SteemIt Steem Power Delegator Checker'>SteemIt Steem Power Delegator Checker</a></li>
+<li><a href='https://steemyy.com/delegatees/' title='SteemIt Steem Power Delegatee Checker'>SteemIt Steem Power Delegatee Checker</a></li>
+<li><a href='https://steemyy.com/outgoing/' title='Steemit Outgoing Votes Report'>Steemit Outgoing Votes Report</a></li>
+<li><a href='https://steemyy.com/payout/' title='Steemit Payout Report'>Steemit Payout Report</a></li>
+<li><a href='https://steemyy.com/incoming/' title='Steemit Incoming Votes Report'>Steemit Incoming Votes Report</a></li>
+<li><a href='https://steemyy.com/outgoing-votes/' title='Steemit Outgoing Votes Checker - Check Last Upvotes/Downvotes by a Steem ID'>Steemit Outgoing Votes Checker</a></li>
+<li><a href='https://steemyy.com/lastvotes/' title='Steemit Incoming Votes Checker - Check Last Upvotes/Downvotes from Steem IDs'>Steemit Incoming Votes Checker</a></li>
+<li><a href='https://steemyy.com/reblogs/' title='Steemit - Who Resteem Your Posts?'>Steemit Who Resteem Your Posts?</a></li>
+<li><a href='https://steemyy.com/wechat-ranking/' title='SteemIt Daily Wechat Group Ranking'>SteemIt Daily Wechat Group Ranking</a></li>
+<li><a href='https://steemyy.com/deleted-comments/' title='Steemit - Recover Deleted Posts/Comments'>Steemit Recover Deleted Posts/Comments</a></li>
+<li><a href='https://steemyy.com/wechat-ranking/rss/' title='SteemIt Daily Wechat Group RSS Feed for Posts'>SteemIt Daily Wechat Group RSS Feed for Posts</a></li>
+<li><a href='https://steemyy.com/wechat-ranking/rss/comments/' title='SteemIt Daily Wechat Group RSS Feed for Comments'>SteemIt Daily Wechat Group RSS Feed for Comments</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Posts
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a title='API Usage Example in Javascript/JQuery' target='_blank' href='../index.html'>API Usage Example</a></li>
+<li><a target='_blank' href='../index.html'>Rate Limit in PHP</a></li>
+<li><a target='_blank' href='https://steakovercooked.com/Web.Services'>Web Services</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div>
+<a rel=nofollow href="../index.html" target="_blank"><img src="../buttons/lato-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;"></a>
+</div>
+<script async src="../pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5311181282559050" data-ad-slot="4109756279" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><script async src="../pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5311181282559050" data-ad-slot="4721130655" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>
+This online String hash tool generates the hash values for the given strings using different hashing algorithms. The current hash algorithms supported via API are: md2, md4, md5, sha1, sha224, sha256, sha384, sha512/224, sha512/256, sha512, sha3-224, sha3-256, sha3-384, sha3-512, ripemd128, ripemd160, ripemd256, ripemd320, whirlpool, tiger128,3, tiger160,3, tiger192,3, tiger128,4, tiger160,4, tiger192,4, snefru, snefru256, gost, gost-crypto, adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat, haval128,3, haval160,3, haval192,3, haval224,3, haval256,3, haval128,4, haval160,4, haval192,4, haval224,4, haval256,4, haval128,5, haval160,5, haval192,5, haval224,5, haval256,5
+</p>
+<p>
+You can use this: <a target=_blank href="../compute-file-hash.html">Compute File Hash (FileReader)</a> to compute the MD5/CRC32/SHA256. for a given file. You can also use this: <a target=_blank href="../md5.html">Online String MD5 Hash</a> to compute the MD5 hash for strings.
+</p>
+<p>
+This Hash tool is also available in Chinese: <a hreflang="zh-CN" href="../index.html">在线字符串哈希算法</a>
+</p>
+<form class="form-inline" role="search">
+<fieldset>
+<legend><label for="msg">Input Unicode-String/Text (Typing and Get the Result Immediately [WYSIWYG] via Ajax API calls) <i>URL Parameter ?s=Text</i></label>
+<textarea placeholder='URL Parameters ?s=Text' title='URL Parameter ?s=text' class='form-control' style='width:99%;height:100px' name='msg' id='msg'></textarea>
+<label for="ascii">String Hash Output</label>
+<div id="output">
+<h4>md2 Hash (Size 32) for Empty String</h4><pre>8350e5a3e24c153df2275c9f80692773</pre><h4>md4 Hash (Size 32) for Empty String</h4><pre>31d6cfe0d16ae931b73c59d7e0c089c0</pre><h4>md5 Hash (Size 32) for Empty String</h4><pre>d41d8cd98f00b204e9800998ecf8427e</pre><h4>sha1 Hash (Size 40) for Empty String</h4><pre>da39a3ee5e6b4b0d3255bfef95601890afd80709</pre><h4>sha224 Hash (Size 56) for Empty String</h4><pre>d14a028c2a3a2bc9476102bb288234c415a2b01f828ea62ac5b3e42f</pre><h4>sha256 Hash (Size 64) for Empty String</h4><pre>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</pre><h4>sha384 Hash (Size 96) for Empty String</h4><pre>38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b</pre><h4>sha512/224 Hash (Size 56) for Empty String</h4><pre>6ed0dd02806fa89e25de060c19d3ac86cabb87d6a0ddd05c333b84f4</pre><h4>sha512/256 Hash (Size 64) for Empty String</h4><pre>c672b8d1ef56ed28ab87c3622c5114069bdd3ad7b8f9737498d0c01ecef0967a</pre><h4>sha512 Hash (Size 128) for Empty String</h4><pre>cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e</pre><h4>sha3-224 Hash (Size 56) for Empty String</h4><pre>6b4e03423667dbb73b6e15454f0eb1abd4597f9a1b078e3f5b5a6bc7</pre><h4>sha3-256 Hash (Size 64) for Empty String</h4><pre>a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a</pre><h4>sha3-384 Hash (Size 96) for Empty String</h4><pre>0c63a75b845e4f7d01107d852e4c2485c51a50aaaa94fc61995e71bbee983a2ac3713831264adb47fb6bd1e058d5f004</pre><h4>sha3-512 Hash (Size 128) for Empty String</h4><pre>a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26</pre><h4>ripemd128 Hash (Size 32) for Empty String</h4><pre>cdf26213a150dc3ecb610f18f6b38b46</pre><h4>ripemd160 Hash (Size 40) for Empty String</h4><pre>9c1185a5c5e9fc54612808977ee8f548b2258d31</pre><h4>ripemd256 Hash (Size 64) for Empty String</h4><pre>02ba4c4e5f8ecd1877fc52d64d30e37a2d9774fb1e5d026380ae0168e3c5522d</pre><h4>ripemd320 Hash (Size 80) for Empty String</h4><pre>22d65d5661536cdc75c1fdf5c6de7b41b9f27325ebc61e8557177d705a0ec880151c3a32a00899b8</pre><h4>whirlpool Hash (Size 128) for Empty String</h4><pre>19fa61d75522a4669b44e39c1d2e1726c530232130d407f89afee0964997f7a73e83be698b288febcf88e3e03c4f0757ea8964e59b63d93708b138cc42a66eb3</pre><h4>tiger128,3 Hash (Size 32) for Empty String</h4><pre>3293ac630c13f0245f92bbb1766e1616</pre><h4>tiger160,3 Hash (Size 40) for Empty String</h4><pre>3293ac630c13f0245f92bbb1766e16167a4e5849</pre><h4>tiger192,3 Hash (Size 48) for Empty String</h4><pre>3293ac630c13f0245f92bbb1766e16167a4e58492dde73f3</pre><h4>tiger128,4 Hash (Size 32) for Empty String</h4><pre>24cc78a7f6ff3546e7984e59695ca13d</pre><h4>tiger160,4 Hash (Size 40) for Empty String</h4><pre>24cc78a7f6ff3546e7984e59695ca13d804e0b68</pre><h4>tiger192,4 Hash (Size 48) for Empty String</h4><pre>24cc78a7f6ff3546e7984e59695ca13d804e0b686e255194</pre><h4>snefru Hash (Size 64) for Empty String</h4><pre>8617f366566a011837f4fb4ba5bedea2b892f3ed8b894023d16ae344b2be5881</pre><h4>snefru256 Hash (Size 64) for Empty String</h4><pre>8617f366566a011837f4fb4ba5bedea2b892f3ed8b894023d16ae344b2be5881</pre><h4>gost Hash (Size 64) for Empty String</h4><pre>ce85b99cc46752fffee35cab9a7b0278abb4c2d2055cff685af4912c49490f8d</pre><h4>gost-crypto Hash (Size 64) for Empty String</h4><pre>981e5f3ca30c841487830f84fb433e13ac1101569b9c13584ac483234cd656c0</pre><h4>adler32 Hash (Size 8) for Empty String</h4><pre>00000001</pre><h4>crc32 Hash (Size 8) for Empty String</h4><pre>00000000</pre><h4>crc32b Hash (Size 8) for Empty String</h4><pre>00000000</pre><h4>fnv132 Hash (Size 8) for Empty String</h4><pre>811c9dc5</pre><h4>fnv1a32 Hash (Size 8) for Empty String</h4><pre>811c9dc5</pre><h4>fnv164 Hash (Size 16) for Empty String</h4><pre>cbf29ce484222325</pre><h4>fnv1a64 Hash (Size 16) for Empty String</h4><pre>cbf29ce484222325</pre><h4>joaat Hash (Size 8) for Empty String</h4><pre>00000000</pre><h4>haval128,3 Hash (Size 32) for Empty String</h4><pre>c68f39913f901f3ddf44c707357a7d70</pre><h4>haval160,3 Hash (Size 40) for Empty String</h4><pre>d353c3ae22a25401d257643836d7231a9a95f953</pre><h4>haval192,3 Hash (Size 48) for Empty String</h4><pre>e9c48d7903eaf2a91c5b350151efcb175c0fc82de2289a4e</pre><h4>haval224,3 Hash (Size 56) for Empty String</h4><pre>c5aae9d47bffcaaf84a8c6e7ccacd60a0dd1932be7b1a192b9214b6d</pre><h4>haval256,3 Hash (Size 64) for Empty String</h4><pre>4f6938531f0bc8991f62da7bbd6f7de3fad44562b8c6f4ebf146d5b4e46f7c17</pre><h4>haval128,4 Hash (Size 32) for Empty String</h4><pre>ee6bbf4d6a46a679b3a856c88538bb98</pre><h4>haval160,4 Hash (Size 40) for Empty String</h4><pre>1d33aae1be4146dbaaca0b6e70d7a11f10801525</pre><h4>haval192,4 Hash (Size 48) for Empty String</h4><pre>4a8372945afa55c7dead800311272523ca19d42ea47b72da</pre><h4>haval224,4 Hash (Size 56) for Empty String</h4><pre>3e56243275b3b81561750550e36fcd676ad2f5dd9e15f2e89e6ed78e</pre><h4>haval256,4 Hash (Size 64) for Empty String</h4><pre>c92b2e23091e80e375dadce26982482d197b1a2521be82da819f8ca2c579b99b</pre><h4>haval128,5 Hash (Size 32) for Empty String</h4><pre>184b8482a0c050dca54b59c7f05bf5dd</pre><h4>haval160,5 Hash (Size 40) for Empty String</h4><pre>255158cfc1eed1a7be7c55ddd64d9790415b933b</pre><h4>haval192,5 Hash (Size 48) for Empty String</h4><pre>4839d0626f95935e17ee2fc4509387bbe2cc46cb382ffe85</pre><h4>haval224,5 Hash (Size 56) for Empty String</h4><pre>4a0513c032754f5582a758d35917ac9adf3854219b39e3ac77d1837e</pre><h4>haval256,5 Hash (Size 64) for Empty String</h4><pre>be417bb4dd5cfb76c7126f4f8eeb1553a449039307b1a3cd451dbfdc0fbbe330</pre></div>
+</legend></fieldset>
+<select class="form-control" id="server" name="server" style="width:100%">
+<option value="" selected>Use Random API Server (&amp;server=0)</option>
+<option value="helloacm.com">Use East USA API Server (&amp;server=1)</option>
+<option value="uploadbeta.com">Use London UK 1, API Server (&amp;server=2)</option>
+<option value="happyukgo.com">Use Tokyo, Japan API Server (&amp;server=3)</option>
+<option value="steakovercooked.com">Use New York 1, USA API Server (&amp;server=4)</option>
+<option value="anothervps.com">Use Frankfurt, Germany API Server (&amp;server=5)</option>
+<option value="isvbscriptdead.com">Use Vancouver, Canada API Server (&amp;server=6)</option>
+<option value="zhihua-lai.com">Use London, UK 2 API Server (&amp;server=7)</option>
+<option value="weibomiaopai.com">Use New York 2, USA API Server (&amp;server=8)</option>
+<option value="steemyy.com">Use New York 3, USA API Server (&amp;server=9)</option>
+</select> <span id="status" style="color: green"> </span>
+</form>
+<BR />
+<h3>String Hash Algorithms API (Application Programming Interface)</h3>
+<del>The API following has a <a href="../index.html" target="_blank">rate-limit</a> 1 call per <a href="../index.html" target="_blank">second</a>.</del>
+<pre>https://helloacm.com/api/hash/?cached&s=Hello
+</pre>
+It will return JSON-encoded object that consists of several hash values using different hash algorithms such as MD5, SHA256..
+<pre>{
+  "md2": "b27af65e6a4096536dd1252e308c2427",
+  "md4": "a58fc871f5f68e4146474ac1e2f07419",
+  "md5": "8b1a9953c4611296a827abf8c47804d7",
+  "sha1": "f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0",
+  "sha224": "4149da18aa8bfc2b1e382c6c26556d01a92c261b6436dad5e3be3fcc",
+  "sha256": "185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969",
+  "sha384": "3519fe5ad2c596efe3e276a6f351b8fc0b03db861782490d45f7598ebd0ab5fd5520ed102f38c4a5ec834e98668035fc",
+  "sha512/224": "0d075258abfd1f8b81fc0a5207a1aa5cc82eb287720b1f849b862235",
+  "sha512/256": "7e75b18b88d2cb8be95b05ec611e54e2460408a2dcf858f945686446c9d07aac",
+  "sha512": "3615f80c9d293ed7402687f94b22d58e529b8cc7916f8fac7fddf7fbd5af4cf777d3d795a7a00a16bf7e7f3fb9561ee9baae480da9fe7a18769e71886b03f315",
+  "sha3-224": "4cf679344af02c2b89e4a902f939f4608bcac0fbf81511da13d7d9b9",
+  "sha3-256": "8ca66ee6b2fe4bb928a8e3cd2f508de4119c0895f22e011117e22cf9b13de7ef",
+  "sha3-384": "df7e26e3d067579481501057c43aea61035c8ffdf12d9ae427ef4038ad7c13266a11c0a3896adef37ad1bc85a2b5bdac",
+  "sha3-512": "0b8a44ac991e2b263e8623cfbeefc1cffe8c1c0de57b3e2bf1673b4f35e660e89abd18afb7ac93cf215eba36dd1af67698d6c9ca3fdaaf734ffc4bd5a8e34627",
+  "ripemd128": "eb507c265df625d5aa16c08f64cd0e65",
+  "ripemd160": "d44426aca8ae0a69cdbc4021c64fa5ad68ca32fe",
+  "ripemd256": "f42494cfc6bf93a47026de7cbcbe67b23725b406276d8f39a5f12872557b4d0e",
+  "ripemd320": "ff2bd9b513aa7c77ecaf21f66a92d284d69f04e1f0fa3baa5115d5a8a5a18407f6806ca52efebdb8",
+  "whirlpool": "00acca7b4456c52a74c589d668b48e1b3d33c9620a0a9b61635111aa92ed8488f21372e27b2122735e561491f8050ed2775a6fb55f7f8b24075d1166bf326bca",
+  "tiger128,3": "a931f1630ed3b9a700d3f57747789121",
+  "tiger160,3": "a931f1630ed3b9a700d3f57747789121ed3c7037",
+  "tiger192,3": "a931f1630ed3b9a700d3f57747789121ed3c703700d4df26",
+  "tiger128,4": "d609cbba2b55235db6ebaa9d0ff65506",
+  "tiger160,4": "d609cbba2b55235db6ebaa9d0ff655063d17949f",
+  "tiger192,4": "d609cbba2b55235db6ebaa9d0ff655063d17949fce163872",
+  "snefru": "bd456c6c33df28257b8736f798e40ac57d9b61996d94ada339abaa8d2a97ec86",
+  "snefru256": "bd456c6c33df28257b8736f798e40ac57d9b61996d94ada339abaa8d2a97ec86",
+  "gost": "88b7f68f7e33a84ae7df2d8216e5f76f2031c14f4d4be685c80c01df42af2e1e",
+  "gost-crypto": "f379a47bcf66e9c8fe51a6ae395de41174eebc83f792a0b0c50ac3072293e5aa",
+  "adler32": "058c01f5",
+  "crc32": "9264541a",
+  "crc32b": "f7d18982",
+  "fnv132": "3726bd47",
+  "fnv1a32": "f55c314b",
+  "fnv164": "fa365282a44c0ba7",
+  "fnv1a64": "63f0bfacf2c00f6b",
+  "joaat": "715ce7ec",
+  "haval128,3": "4002d17f7b08e80048c27a6179552198",
+  "haval160,3": "73c70cb6ef52db1457443b038784584317137581",
+  "haval192,3": "28ab2de0468ccf4b87e6e84b79544fd8ef3c50743ed2e220",
+  "haval224,3": "7c3883e323bfca15ea58bb4a75eb42f772fb4998dbffae54f9142f05",
+  "haval256,3": "a6a9682bb0ed9c852369b327e02d9132ecda1e76e0fea87f81c3cf5920367c28",
+  "haval128,4": "7505fb2cd3e17faf26c060d90feac153",
+  "haval160,4": "6992a805b29cf46b78482a0d830a0dcf59a97dc7",
+  "haval192,4": "484ac833b792bc2937b2430ef95027e86c7abc86bd1147e8",
+  "haval224,4": "29894b2a534f61dc77ac52c2a7a446246c6ef7728b84bb77a3dc6977",
+  "haval256,4": "ee43c751e7f77a021ce4ee5726a06c5c3bff1702326f0e8d259d2055ca27d52e",
+  "haval128,5": "b9fe471d6a1e2961925ba31820f8e73a",
+  "haval160,5": "3b737f8f953fdf8aeee2047eee534d04e03e8513",
+  "haval192,5": "4c3e872cf484706251b26f65b3c75dd0fe644c6a33a5ce9c",
+  "haval224,5": "eae0475bcd938756990fec658c07e851d78b6a5a3c97da3295a5dfa9",
+  "haval256,5": "3808fc5186e1dab0fd35742305787a0017bdb41900bf43882404972788e36480"
+}
+</pre>
+Parameter <I>s</I> is the input string.
+If <em>$_GET</em> parameter <em>s</em> is not specified, this API will use the <B>$_POST</B> variable <em>s</em> instead. It is recommended to pass the variable via _POST method as this is more secure, and allows you to deal with a lengthy input.
+<pre>curl <B>-X POST</B> https://helloacm.com/api/hash/?cached -d "s=MD5 Rocks!"
+</pre>
+<h3>Hash Algorithm API Servers:</h3>
+<p>
+6 Servers are currently available. All API calls are subject to fair use policy. If you abuse the use, then your IP may be blocked permanently. Please note that if you pass the variable via $_GET, the API may be blocked by the CloudFlare Web Firewall e.g. suspicious SQL injection or malicious code.
+</p>
+<ul>
+<li>East USA: <a rel=nofollow href="../index.html" target=_blank>https://helloacm.com/api/</a></li>
+<li>London, UK: <a rel=nofollow href="https://uploadbeta.com" target=_blank>https://uploadbeta.com/api/</a></li>
+<li>Tokyo, Japan: <a rel=nofollow href="https://happyukgo.com" target=_blank>https://happyukgo.com/api/</a></li>
+<li>New York 1, USA: <a rel=nofollow href="https://steakovercooked.com" target=_blank>https://steakovercooked.com/api/</a></li>
+<li>Frankfurt, Germany: <a rel=nofollow href="https://anothervps.com" target=_blank>https://anothervps.com/api/</a></li>
+<li>Vancouver, Canada: <a rel=nofollow href="https://isvbscriptdead.com" target=_blank>https://isvbscriptdead.com/api/</a></li>
+<li>London, UK (Backup): <a rel=nofollow href="https://zhihua-lai.com" target=_blank>https://zhihua-lai.com/api/</a></li>
+<li>New York 2, USA: <a rel=nofollow href="https://weibomiaopai.com" target=_blank>https://weibomiaopai.com/api/</a></li>
+<li>New York 3, USA: <a rel=nofollow href="https://steemyy.com" target=_blank>https://steemyy.com/api/</a></li>
+</ul>
+<h3>Complete API Source Code (PHP) for String Hash Algorithms</h3>
+<pre>  $s = '';
+  if (isset($_GET['s'])) {
+     $s = $_GET['s'];
+  } else {
+    if (isset($_POST['s'])) {
+      $s = $_POST['s'];
+    }
+  }
+  $data = array();
+  foreach (hash_algos() as $v) { 
+          $r = hash($v, $s, false); 
+          $data[$v] = $r; 
+  }   
+  header("Access-Control-Allow-Origin: *");
+  header('Content-Type: application/json');
+  die(json_encode($data));
+</pre>
+<script async src="../pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-5311181282559050" data-ad-slot="3357502457"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h4>Share: <a href='../index.html'>List of Many Other Online Tools</a></h4>
+<script async src="../pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5311181282559050" data-ad-slot="4109756279" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script>var sharedropdown_english = true;var sharedropdown_rss = "/out/helloacm";</script><div id="sharedropdown"> </div><div id="sharedropdown_qr"> </div><script src="../js/addthis.js" async></script>
+<script type="text/javascript" src="../js/300/addthis_widget.js" async></script></div></center><script src='../js/jquery.js'></script><script src="../bs/js/bootstrap.min.js"></script><script>
+$(document).ready(function() {
+    $("a[href='#top']").click(function() { $("html, body").stop().animate({ scrollTop: 0 }, "slow"); return false; });
+function change(txt) {
+var server = $('#server').val();         
+if (!server) {
+  var serverlist = ['helloacm.com', 'happyukgo.com', 'uploadbeta.com', 'steakovercooked.com', 'anothervps.com', 'isvbscriptdead.com', 'weibomiaopai.com', 'zhihua-lai.com', 'steemyy.com'];
+  server = serverlist[Math.floor(Math.random() * serverlist.length)];          
+}               $("span#status").html("Contacting API Server: <B>" + server + "</B> ...");
+  $.ajax(
+    {
+        dataType: "json",
+        type: "GET",
+        url: "https://" + server + "/api/hash/?cached&s=" + encodeURIComponent(txt),
+        cache: false,
+        success: function (response) {
+          var data = response;
+          var s = "";
+          var keys = Object.keys(data);
+          for (var i = 0; i < keys.length; ++ i) {
+            s += "<h4>" + keys[i] + " Hash (Size " + data[keys[i]].length + ") for String: " + txt + "</h4>";
+            s += "<pre>" + data[keys[i]] + "</pre>"; 
+          }
+          $('#output').html(s);
+        },
+         error: function(request, status, error) {
+            $('span#status').html('<font color=red>API Server (' + server + ') is currently offline. Please try again later!' + request.responseText + '</font>');
+         },
+         complete: function(data) {
+                $("span#status").html("");
+         }    
+    });
+}
+  $("textarea#msg").keyup(function() {
+      change($(this).val());
+  });    
+});
+</script>
+</body></html>

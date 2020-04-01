@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head><meta charset="UTF-8"><script src="../cdn-cgi/apps/head/qbmfjji_vubu_twprvwygszvdm8.js"></script><link rel="dns-prefetch" href="//ajax.cloudflare.com"><link rel="dns-prefetch" href="//cdnjs.cloudflare.com"><link rel="dns-prefetch" href="//cloudflare.com"><link rel="dns-prefetch" href="//ajax.googleapis.com"><link rel="dns-prefetch" href="//googleapis.com"><link rel="dns-prefetch" href="//google-analytics.com"><link rel="dns-prefetch" href="//pagead2.googlesyndication.com"><link rel="dns-prefetch" href="//googlesyndication.com"><title>Photo Drawing Style Tool | Online Javascript Tools</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name=applicable-device content="pc,mobile">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"><link rel="icon" href="../favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"><link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff"><meta name='description' content='Photo made Drawing Style using Javascript FileReader, online tool without uploading the photo'>
+<meta name='keywords' content='Photo Drawing Style, Javascript Photo Editor, Black & White Style, Sketch and Artist Style' />
+<link rel="canonical" href="../tools/sketch.html">
+<meta property="og:url" content="https://helloacm.com/tools/sketch/">
+<link href="../bs/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../compute-file-hash/dropzone.min.css">
+<!--[if lt IE 9]>
+<script src="../html5shiv/3-7-2/html5shiv.min.js"></script>
+<script src="../respond/1-4-2/respond.min.js"></script>
+<![endif]-->
+<style>
+.mainbody{width:80%;text-align:left;margin:10px;}
+th,td{word-wrap:break-word;overflow-wrap:break-word;}
+</style> <link rel="stylesheet" type="text/css" href="../tools/sketch/style.css">
+<style>
+img {max-width:99%;border:0;}
+</style>
+<script async src="../pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5311181282559050",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body><div style="position:fixed;bottom:50px;right:5px"><a title="To the Top" href="#top"><img width=40 alt="To the Top" title="To the Top" src="data:image/png;base64,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" /></a></div><a name="top"></a><center>
+<div class='mainbody'>
+<h1>Photo Drawing/Sketch Style Tool</h1>
+<style>
+.dropdown{float:left;}
+.toolstopmenu{display:inline-block;}
+</style>
+<div class="toolstopmenu">
+<div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Files
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../compute-file-hash.html' title='Compute File Hash (FileReader)'>Compute File Hash</a></li>
+<li><a href='https://rot47.net/base64encoder.html' title='Base64 Encoder/Decoder for Text/Binary Files'>Base64 Binary Files</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Images
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../tools/sketch.html' title='Photo Drawing/Sketch Style Tool'>Photo Drawing/Sketch Style</a></li>
+<li><a href='../tools/image-to-ascii.html' title='Image to ASCII Converter | Convert Photos to ASCII Online Tool'>Image to ASCII Converter</a></li>
+<li><a href='../tools/qrcode-reader.html' title='QR Image Reader'>QR Image Reader</a></li>
+<li><a href='../images-compressor.html' title='Images Compressor APIs'>Images Compressor APIs</a></li>
+<li><a href='https://uploadbeta.com/picture-gallery/faq.php#api' title='APIs from Image Sharer'>APIs from Image Sharer</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Encrytion
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../md5.html' title='Ajax MD5 Hash Calculator'>Ajax MD5 Hash Calculator</a></li>
+<li><a href='../tools/hash.html' title='Online Hash Calculator for Strings using Different Algorithms'>Online Hash Calculator for Strings using Different Algorithms</a></li>
+<li><a href='../decode-hardware-id.html' title='VMProtect Hardware ID Decoder'>VMProtect Hardware ID Decoder</a></li>
+<li><a href="https://rot47.net/">ROT47 Character Substitution Cipher</a></li>
+<li><a href="https://rot47.net/rot13.html">ROT13 Letter/ROT5 Digit Substitution Cipher</a></li>
+<li><a href="https://rot47.net/crc32.html">CRC32 Calculator</a></li>
+<li><a href="https://rot47.net/base.html">Arbitrary Base Number Converter</a></li>
+<li><a href="https://rot47.net/pibas.interpreter.html">PIBAS Interpreter</a></li>
+<li><a href="https://rot47.net/_url/">Make URL Shorter</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Developer
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../tools/what-is-my-screen-resolution.html'>What is my screen resolution?</a></li>
+<li><a href='https://isvbscriptdead.com/vbs-obfuscator/' title='Online VBScript Obfuscator (Encrypt/Protect VBS)'>Online VBScript Obfuscator</a></li>
+<li><a href='../index.html' title='Unlimited GUID Generator with API'>Unlimited GUID Generator with API</a></li>
+<li><a href='../index.html' title='HTML5 RGB Color Pickers/Table'>HTML5 RGB Color Pickers/Table</a></li>
+<li><a href='../index.html' title='Random String/Password Generator'>Random String/Password Generator</a></li>
+<li><a href='../index.html' title='Unicode String to ASCII converter'>Ajax Unicode String to ASCII</a></li>
+<li><a href='../index.html' title='List of APIs'>List of All APIs</a></li>
+<li><a href='../index.html' title='Online Crontab Line Generator'>Online Crontab Line Generator</a></li>
+<li><a href='../index.html' title='Markdown Parser with API'>Markdown Parser with API</a></li>
+<li><a href='../index.html' title='Unix Timestamp Converter'>Unix Timestamp Converter</a></li>
+<li><a href='../index.html' title='URL Percent Encoding/Decoding'>URL Percent Encoding/Decoding</a></li>
+<li><a href='../index.html' title='This API /api/get-item allows you to retrieve the item description(image, title, price) from webpages'>Obtain Shop-Item Data</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Chrome Extensions
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/simple-snake-game/fbbeckekbefhhmabpfjgpjobkmnfjbec'>Simple Snake Game</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/coin-tools/fmglcggbdcbkpkfapngjobfeakehpcgj'>CoinTools - Cryptocurrency Lookup</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/steem-tools/emjfpeecopppojbhkigjjmcahbfahhbn'>Steem Tools</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/utopian-moderator-supervi/dcjdbldgiiboblbaconadffdaicicebc'>Utopian Moderator & Supervisor</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/hide-steemit-payout/lbpcheminbfokogdnckkipdmaadldhlh'>Hide SteemIt Payout</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/job-tools/ghclpimmbjepihhlnklkiemncamklkii'>JobTools - Job Seeking</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/logo-turtle/dcoeaobaokbccdcnadncifmconllpihp'>Logo Turtle Programming</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj'>Show My IP Addresses (External and Local)</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/%E7%AE%80%E4%BD%93%E7%B9%81%E4%BD%93%E8%BD%AC%E6%8D%A2-simplifiedtraditio/olpihmabpjpllgmahlgiakkgaccigpfo'>Simplified/Traditional Chinese</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/simple-video-download-hel/ilcdiicigjaccgipndigcenjieedjohj'>Simple Video Download Helper</a></li>
+<li><a target=_blank rel=nofollow href='https://chrome.google.com/webstore/detail/offline-qr-code-generator/kfhbhjigpkcbpmknfomdobahejfajado'>Offline QR Code Generator/Editor</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Game
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' target=_blank title='Simple Snake Game in the Browser'>Simple Snake Game in Javascript</a></li>
+<li><a href='../index.html' title='This page uses JQuery/Ajax to call a API to compute 24 points for 4 poker cards.'>Poker 24 pointer calculator</a></li>
+<li><a href='https://justyy.com/watch-tv-online/en/' title='Watch TV Online | Online Video Streaming | Watch Sports'>Online Video Streaming</a></li>
+<li><a href="https://weibomiaopai.com/download-video-parser.php">Video Download Tool</a></li>
+<li><a href='../index.html' title='Unlimited Maze Games | Find the Exit of Mazes'>Unlimited Maze Games</a></li>
+<li><a href='https://uploadbeta.com/picture-gallery/?key=BingEverydayWallpaperPicture' title='Bing Everyday Wallpaper'>Bing Everyday Wallpaper</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Fun
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' title='Online Fortune-teller Tool'>Fortune-Teller</a></li>
+<li><a href='../index.html' title='Online Calendar Tool'>Calendar</a></li>
+<li><a href='../index.html' title='Online RIG Tool'>Random Identity Generator</a></li>
+<li><a href='../index.html' title='Online Gregorian dates to Discordian Converter'>Gregorian/Discordian Converter</a></li>
+<li><a href='../index.html' title='Cowsay/Cowthink Tool: configurable speaking/thinking cow'>Cowsay/CowThink</a></li>
+<li><a href='../index.html' title='How many days do you need before you have sex with the girl?'>Sex Equation</a></li>
+<li><a href='../index.html' title='Online Figlet Tool'>Figlet</a></li>
+<li><a href='../index.html' title='Online toilet Tool'>Toilet</a></li>
+<li><a href='../index.html' title='Online banner Tool'>Banner</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Daily
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' title='MPG Calculator (Car Fuel Efficiency) with API'>MPG Calculator</a></li>
+<li><a href='../index.html' title='The Simple Mortgage Calculator Implemented in C/C++, Javascript and MySQL'>Mortgage Calculator</a></li>
+<li><a target=_blank href='https://justyy.com/tools/chinese-converter/' title='Chinese Converter (Pinyin, Cantonese and Mandarin)'>Chinese Converter (Pinyin, Cantonese and Mandarin)</a></li>
+<li><a target=_blank href='https://justyy.com/archives/3450' title='Pinyin API'>Pinyin API</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Maths
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' title='Plot Function Graph'>Simple Function Plot</a></li>
+<li><a href='../index.html' title='Pi Digits Lookup with API'>Pi Digits Lookup</a></li>
+<li><a href='../index.html' title='Number Factorization with API'>Number Factorization Tool with API</a></li>
+<li><a href='../index.html' title='Online Converter from Arabic Numerals (Integers) to English Words with API'>Arabic Numerals to English</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Network
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='../index.html' title='Online HTTP Curl Tool'>Online CURL</a></li>
+<li><a href='../index.html' title='htpasswd File Generator for Apache httpd'>htpasswd File Generator</a></li>
+<li><a href='../index.html' title='URL Status Checker with API support'>URL Status Checke</a></li>
+<li><a href='../index.html' title='Parse User Agent String with API'>Parse User Agent String</a></li>
+<li><a href='../index.html' title='Ping a Host/Domain'>Ping a Host/Domain</a></li>
+<li><a href='../index.html' title='What is my IP address'>Get IP Address</a></li>
+<li><a href='../index.html' title='This page implements a Javascript Ajax calls the API to compute an IPv4 Netmask/broadcast/etc.'>IPv4 Calculator</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">SteemIt
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href='https://steemyy.com/' title='SteemIt Tools and APIs'>SteemIt Tools and APIs</a></li>
+<li><a href='https://steemyy.com/witness-ranking/' title='Steemit Witness Ranking Table'>Steemit Witness Ranking Table</a></li>
+<li><a href='https://steemyy.com/trail/' title='Steem Auto Trailer'>Steem Auto Trailer</a></li>
+<li><a href='https://steemyy.com/steem-conversations/' title='Steem Conversations Viewer'>Steem Conversations Viewer</a></li>
+<li><a href='https://steemyy.com/account/' title='Steemit Account Information'>Steemit Account Information</a></li>
+<li><a href='https://steemyy.com/witness-data/justyy' title='Steem Witness Information'>Steem Witness Information</a></li>
+<li><a href='https://steemyy.com/witness/' title='Steemit Witnesses List - Unvote Inactive Witnesses'>Steemit Witnesses List - Unvote Inactive Witnesses</a></li>
+<li><a href='https://steemyy.com/proxy/' title='Steemit Witness Proxy - Check Who Vote You As Witness Proxy?'>Steemit Witness Proxy - Check Who Vote You As Witness Proxy?</a></li>
+<li><a href='https://steemyy.com/steemjs/' title='Steemit SteemJs Editor'>Steemit SteemJs Editor</a></li>
+<li><a href='https://steemyy.com/claim-rewards/' title='SteemIt Auto Claim Rewards'>SteemIt Auto Claim Rewards</a></li>
+<li><a href='https://steemyy.com/claim-tokens/' title='SteemIt Auto Claim Scot Tokens Rewards'>SteemIt Auto Claim Tokens</a></li>
+<li><a href='https://steemyy.com/mutual-witness/' title='Steemit Mutual Witness Report'>Steemit Mutual Witness Report</a></li>
+<li><a href='https://steemyy.com/who-vote-you-as-witness/' title='SteemIt Witness Supporters'>SteemIt Witness Supporters</a></li>
+<li><a href='https://steemyy.com/powerdown/' title='Steemit Powerdown Status'>Steemit Powerdown Status</a></li>
+<li><a href='https://steemyy.com/top-delegations/' title='Steemit Top 100 Delegations'>Steemit Top 100 Delegations</a></li>
+<li><a href='https://steemyy.com/top-delegations-by-count/' title='SteemIt Most Delegated Account by Number of Delegations'>SteemIt Most Delegated Account by Number of Delegations</a></li>
+<li><a href='https://steemyy.com/top-delegations-by-sp/' title='SteemIt Most Delegated Account by Vests'>SteemIt Most Delegated Account by Vests</a></li>
+<li><a href='https://steemyy.com/sp-delegate-form/' title='SteemIt - SteemIt SP Delegation Form'>SteemIt SP Delegation Form</a></li>
+<li><a href='https://steemyy.com/wallet/' title='SteemIt Wallet Tool - Send SBD or STEEM to Multiple Accounts'>SteemIt Wallet Tool</a></li>
+<li><a href='https://steemyy.com/transfer-viewer/' title='SteemIt Wallet Tool - Steem Account Transfer Viewer'>Steem Account Transfer Viewer</a></li>
+<li><a href='https://steemyy.com/who-has-not-voted/' title='SteemIt - Check If Your Followers Have Voted Your Post'>SteemIt Followers/Votes Checker</a></li>
+<li><a href='https://steemyy.com/who-downvote-you/' title='SteemIt - Check Who Downvoted Your Posts/Comments'>SteemIt Downvote Checker</a></li>
+<li><a href='https://steemyy.com/flag/' title='SteemIt Your Downvote History'>SteemIt Your Downvote History</a></li>
+<li><a href='https://steemyy.com/delegators/' title='SteemIt Steem Power Delegator Checker'>SteemIt Steem Power Delegator Checker</a></li>
+<li><a href='https://steemyy.com/delegatees/' title='SteemIt Steem Power Delegatee Checker'>SteemIt Steem Power Delegatee Checker</a></li>
+<li><a href='https://steemyy.com/outgoing/' title='Steemit Outgoing Votes Report'>Steemit Outgoing Votes Report</a></li>
+<li><a href='https://steemyy.com/payout/' title='Steemit Payout Report'>Steemit Payout Report</a></li>
+<li><a href='https://steemyy.com/incoming/' title='Steemit Incoming Votes Report'>Steemit Incoming Votes Report</a></li>
+<li><a href='https://steemyy.com/outgoing-votes/' title='Steemit Outgoing Votes Checker - Check Last Upvotes/Downvotes by a Steem ID'>Steemit Outgoing Votes Checker</a></li>
+<li><a href='https://steemyy.com/lastvotes/' title='Steemit Incoming Votes Checker - Check Last Upvotes/Downvotes from Steem IDs'>Steemit Incoming Votes Checker</a></li>
+<li><a href='https://steemyy.com/reblogs/' title='Steemit - Who Resteem Your Posts?'>Steemit Who Resteem Your Posts?</a></li>
+<li><a href='https://steemyy.com/wechat-ranking/' title='SteemIt Daily Wechat Group Ranking'>SteemIt Daily Wechat Group Ranking</a></li>
+<li><a href='https://steemyy.com/deleted-comments/' title='Steemit - Recover Deleted Posts/Comments'>Steemit Recover Deleted Posts/Comments</a></li>
+<li><a href='https://steemyy.com/wechat-ranking/rss/' title='SteemIt Daily Wechat Group RSS Feed for Posts'>SteemIt Daily Wechat Group RSS Feed for Posts</a></li>
+<li><a href='https://steemyy.com/wechat-ranking/rss/comments/' title='SteemIt Daily Wechat Group RSS Feed for Comments'>SteemIt Daily Wechat Group RSS Feed for Comments</a></li>
+</ul>
+</div>
+<div class="dropdown">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Posts
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a title='API Usage Example in Javascript/JQuery' target='_blank' href='../index.html'>API Usage Example</a></li>
+<li><a target='_blank' href='../index.html'>Rate Limit in PHP</a></li>
+<li><a target='_blank' href='https://steakovercooked.com/Web.Services'>Web Services</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div>
+<a rel=nofollow href="../index.html" target="_blank"><img src="../buttons/lato-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;"></a>
+</div>
+<script async src="https:../pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5311181282559050" data-ad-slot="4109756279" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><p>This page provides a quick Javascript photo tool (based on <a target=_blank href='../index.html'>HTML5 FileReader</a>). You can simply select file (or drop into the following file zone) and make your picture look in an artist way!</p>
+<p>
+You will need modern HTML5 browsers such as Chrome(recommend), Firefox, Opera(12+), IE10+ in order to edit the photo offline (without uploading). Please be reassured that your Photo will NOT be uploaded in any way and will be only kept locally in your browser. The technology behind this page is purely Javascript + HTML5, which is only local. It might not work on your smart phones unless you have modern latest mobile browsers e.g. Chrome, Firefox.
+</p>
+<script async src="../pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5311181282559050" data-ad-slot="3837839457" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<form action="" class='form-inline' name="name_form" method="get">
+<div class='row'>
+<input class='form-control' type="file" name="files" id="files" accept="image/*" onchange="drop_event(this.files);" title="Click to upload Photo">
+Blury (0 to 100)： <input class='form-control' id="strength" type="number" min="1" value="10" placeholder="10" class="input-text" />
+<button class='form-control' id="action" class='button danger small' style='display:none'>Select Photo</button>
+<a id="download" class='form-control' download="sketch.png" target="_blank" class="button success small" href="javascript: void(0);">Download Sketch Photo</a>
+</div>
+</form>
+<div class="body grid" onclick='javascript:$("#files").trigger("click");'>
+<canvas style="border: 1px solid #CCC;max-width:100%" id="canvas" width="800" height="600"></canvas>
+<div id="dropper" class="dropper" title="Drag your Photo and the photo will be processed.">
+<h2>Drag & Drop or click to select a photo</h2>
+</div>
+</div>
+<script type="text/javascript" src="../tools/sketch/sketching.js"></script>
+<script type="text/javascript" src="../tools/sketch/main.js"></script>
+<h3>Sketch Examples</h3>
+<img alt='Sketch Examples 1' src='../tools/sketch/example-sketch-1.png' />
+<img alt='Sketch Examples 3' src='../tools/sketch/example-sketch-3.png' />
+<img alt='Sketch Examples 4' src='../tools/sketch/example-sketch-4.png' />
+<img alt='Sketch Examples 5' src='../tools/sketch/example-sketch-5.png' />
+<img alt='Sketch Examples 6' src='../tools/sketch/example-sketch-6.png' />
+<img alt='Sketch Examples 7' src='../tools/sketch/example-sketch-7.png' />
+<script async src="../pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-5311181282559050" data-ad-slot="3357502457"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h4>Share: <a href='../index.html'>List of Many Other Online Tools</a></h4>
+<script async src="https:../pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5311181282559050" data-ad-slot="4109756279" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script>var sharedropdown_english = true;var sharedropdown_rss = "/out/helloacm";</script><div id="sharedropdown"> </div><div id="sharedropdown_qr"> </div><script src="../js/addthis.js" async></script>
+<script type="text/javascript" src="../js/300/addthis_widget.js" async></script></div></center><script src='../js/jquery.js'></script><script src="../bs/js/bootstrap.min.js"></script>
+<script async type="text/javascript" src="../compute-file-hash/dropzone.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("a[href='#top']").click(function() { $("html, body").stop().animate({ scrollTop: 0 }, "slow"); return false; });
+});
+</script></body></html>
